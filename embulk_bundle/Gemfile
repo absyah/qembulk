@@ -1,0 +1,5 @@
+source 'https://rubygems.org/'
+
+gem 'embulk', '~> 0.8.39'
+gem 'embulk-input-bigquery', '~> 0.0.1'
+gem 'embulk-output-postgresql', '~> 0.8.0'
