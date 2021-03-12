@@ -19,3 +19,17 @@ Login to running container via `docker exec` command.
 ```bash
 $ docker exec -it {CONTAINER ID} /bin/bash
 ```
+
+## Run bundle
+
+```bash
+cd ~/app/embulk_bundle
+embulk bundle
+```
+
+## Run embulk
+
+```bash
+cd ~/app
+embulk -b ./embulk_bundle/ config.yml
+```
