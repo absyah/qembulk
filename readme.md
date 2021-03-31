@@ -31,5 +31,5 @@ embulk bundle
 
 ```bash
 cd ~/app
-embulk -b ./embulk_bundle/ config.yml
+embulk run -b ./embulk_bundle/ config.yml
 ```
