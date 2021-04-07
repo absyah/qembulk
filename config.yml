@@ -1,0 +1,7 @@
+in:
+  type: bigquery
+  keyfile: <fill_later>
+  max: 1000
+out:
+  type: postgresql
+  mode: direct_merge
