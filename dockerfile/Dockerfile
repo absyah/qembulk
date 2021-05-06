@@ -33,7 +33,7 @@ RUN ~/.rbenv/bin/rbenv exec gem install bundler -v 2.2.14
 RUN ~/.rbenv/bin/rbenv rehash
 
 # Install embulk
-RUN curl --create-dirs -o ${HOME}/.embulk/bin/embulk -L "https://dl.bintray.com/embulk/maven/embulk-0.9.23.jar"
+RUN curl --create-dirs -o ${HOME}/.embulk/bin/embulk -L "https://github.com/embulk/embulk/releases/download/v0.9.23/embulk-0.9.23.jar"
 RUN chmod +x ${HOME}/.embulk/bin/embulk
 # Set embulk path
 ENV PATH /root/.embulk/bin:$PATH

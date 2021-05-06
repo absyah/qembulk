@@ -4,4 +4,9 @@ in:
   max: 1000
 out:
   type: postgresql
-  mode: direct_merge
+  mode: insert_direct
+  create_table_option: |
+    ;CREATE TABLE new_table (id BIGSERIAL PRIMARY KEY, like testing2 including all);
+    DROP TABLE <replace_with_table_name>;
+    ALTER TABLE new_table RENAME TO <replace_with_table_name>;
+
